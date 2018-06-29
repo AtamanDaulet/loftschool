@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('./assets/fonts/GothamPro-BoldItalic.eot');
+	src: local('Gotham Pro Bold Italic'), local('GothamPro-BoldItalic'),
+		url('./assets/fonts/GothamPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/GothamPro-BoldItalic.woff') format('woff'),
+		url('./assets/fonts/GothamPro-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('./assets/fonts/GothamPro-Italic.eot');
+	src: local('Gotham Pro Italic'), local('GothamPro-Italic'),
+		url('./assets/fonts/GothamPro-Italic.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/GothamPro-Italic.woff') format('woff'),
+		url('./assets/fonts/GothamPro-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('./assets/fonts/GothamPro-Medium.eot');
+	src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
+		url('./assets/fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/GothamPro-Medium.woff') format('woff'),
+		url('./assets/fonts/GothamPro-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('./assets/fonts/GothamPro-BlackItalic.eot');
+	src: local('Gotham Pro Black Italic'), local('GothamPro-BlackItalic'),
+		url('./assets/fonts/GothamPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/GothamPro-BlackItalic.woff') format('woff'),
+		url('./assets/fonts/GothamPro-BlackItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('./assets/fonts/GothamPro-Bold.eot');
+	src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+		url('./assets/fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/GothamPro-Bold.woff') format('woff'),
+		url('./assets/fonts/GothamPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Pro Narrow';
+	src: url('./assets/fonts/GothamProNarrow-Bold.eot');
+	src: local('Gotham Pro Narrow Bold'), local('GothamProNarrow-Bold'),
+		url('./assets/fonts/GothamProNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/GothamProNarrow-Bold.woff') format('woff'),
+		url('./assets/fonts/GothamProNarrow-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Pro Narrow';
+	src: url('./assets/fonts/GothamProNarrow-Medium.eot');
+	src: local('Gotham Pro Narrow Medium'), local('GothamProNarrow-Medium'),
+		url('./assets/fonts/GothamProNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/GothamProNarrow-Medium.woff') format('woff'),
+		url('./assets/fonts/GothamProNarrow-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('./assets/fonts/GothamPro-LightItalic.eot');
+	src: local('Gotham Pro Light Italic'), local('GothamPro-LightItalic'),
+		url('./assets/fonts/GothamPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/GothamPro-LightItalic.woff') format('woff'),
+		url('./assets/fonts/GothamPro-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('./assets/fonts/GothamPro-Light.eot');
+	src: local('Gotham Pro Light'), local('GothamPro-Light'),
+		url('./assets/fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/GothamPro-Light.woff') format('woff'),
+		url('./assets/fonts/GothamPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('./assets/fonts/GothamPro-Black.eot');
+	src: local('Gotham Pro Black'), local('GothamPro-Black'),
+		url('./assets/fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/GothamPro-Black.woff') format('woff'),
+		url('./assets/fonts/GothamPro-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('./assets/fonts/GothamPro.eot');
+	src: local('Gotham Pro'), local('GothamPro'),
+		url('./assets/fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/GothamPro.woff') format('woff'),
+		url('./assets/fonts/GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('./assets/fonts/GothamPro-MediumItalic.eot');
+	src: local('Gotham Pro Medium Italic'), local('GothamPro-MediumItalic'),
+		url('./assets/fonts/GothamPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/GothamPro-MediumItalic.woff') format('woff'),
+		url('./assets/fonts/GothamPro-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body,{
+    height: 100%;
+}
+body{
+    background-color: #282828;   
+}
+.header{
+    background-color: #000;
+    height: 435px;   
+    overflow: hidden;
+} 
+.logo-bg{
+    position: absolute;
+    height: 75px;
+}
+.logo{
+    position: relative;
+    float: left;
+    padding: 13px 0 13px 19px;
+    height: 75px;
+}
+.phone{
+    position: relative;
+    float: right;
+    padding-right: 20px;
+    padding-top: 17px;
+    height: 75px;
+}
+.phone a{
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: "Gotham Pro";
+    text-decoration: none;
+}
+.phone p{
+    color: #ec1e79;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Open Sans";
+    text-align: right;
+    text-decoration: underline;
+    margin-top: 0;
+    padding-right: 3px;
+    padding-top: 1px;    
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 100%;
+    display: table;
+}
+.container{
+    padding-right: 20px;
+    padding-left: 20px; 
+    padding-top: 65px;
+    height: 100%;
+    display: table-row;
+}
+.sidebar{
+    display: block;
+    width: 140px;
+    float: left;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+.menu__list {
+    padding-left: 0;
+    list-style-type: none;   
+}
+.menu__item {    
+    height: 50px;
+}
+.menu__link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ec1e7b;  
+}
+.menu_active{
+    color: #000;  
+    text-decoration: underline;
+}
+.menu__title{     
+    font-family: "Gotham Pro";
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 14px;
+    vertical-align: top;
+}
+.maincontent{
+    display: block;
+    width: 920px;
+    display: table-cell;
+    float: left;    
+    padding-bottom: 75px;   /*space for footer*/
+}
+.features{
+    vertical-align: top;
+    padding: 0 20px;
+}
+.features__list{
+    padding-top: 10px; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.maincontent__title{
+    font-family: "Gotham Pro";
+    font-size: 49px;
+    font-weight: bold;   
+    margin-top: 57px;
+    padding-left: 39px;
+}
+.features__item{
+    width: 270px;
+    padding: 0 15px;
+    display: inline-block;
+    list-style-type: none;   
+}
+.features__item-pic{
+    background: #000;
+    border-radius: 50%;
+    padding: 20px;
+}
+.features__item-icon{
+    text-align: center;
+    overflow: hidden
+}
+.features__item-title{
+    font-size: 12px;
+    font-family: "Gotham Pro";
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 16px;
+    padding-left: 5px;
+    letter-spacing: 2px;
+}
+.features__item-text, .features__item-list{    
+  font-size: 20px;
+  font-family: "Gotham Pro";  
+}
+.features__item-text{
+    text-align: center;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    letter-spacing: -1px;
+    line-height: 1.5;
+}
+/*  Стилизовка маркеров*/
+.features__item-list{
+    list-style: none;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 2px;
+    letter-spacing: -1px;
+    line-height: 1.7;
+}
+.features__item-point::before{
+    content: "";
+    background: #ec1e7b;  
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.features__space{
+    padding-left: 30px;
+}
+/*section news*/
+.news{
+    padding-top: 1px;
+    padding-left: 17px;
+}
+.news__list{
+    padding-left: 37px;
+}
+.news__item{
+    list-style-type: none; 
+    position: relative;
+    padding: 29px 0;
+}
+.news__item-content{
+    padding-left: 20px;
+    display: inline-block;
+    width: 720px;
+    position: absolute;
+    font-family: "Gotham Pro";
+}
+.avatar{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow:hidden;
+    display: inline-block;
+}
+.avatar-img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain; 
+}
+.news__item-date{
+    color: #6f6e6e;
+    font-size: 15px;
+}
+.news__item-title{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 4px;
+}
+.news__item-text{
+    margin: 0;
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 1.9;
+}
+/*switcher pagination*/
+
+.switcher{
+    text-align: center;
+    margin-bottom: 44px;
+    padding: 8px;
+    margin-left: 57px;    
+}
+.switcher__display{
+    float: left;
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #656464;
+    padding-left: 266px;
+    padding-top: 20px;
+}
+.switcher__paginator, .switcher__prev, .switcher__pages, .switcher__page-item {
+    display: inline-block;
+}
+.switcher__paginator{
+    width: 230px;
+    margin-right: 215px;
+}
+.switcher__pages{
+    padding-left: 1px;  
+}
+.switcher__prev, .switcher__next{
+    /*padding-left: 10px;*/
+    padding-right: 8px;
+    text-decoration: none;
+    color: #000;
+    height: 14px;
+    vertical-align: -10%;
+}
+.switcher__next{
+    padding-left: 6px;
+}
+.switcher__link{
+    text-decoration: none;
+    font-family: "Gotham Pro";
+    font-size: 14px;
+    color: #000; 
+    font-weight: bold;
+    vertical-align: -10%;
+}
+.switcher__page-item{    
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+}
+.switcher__page-item.switcher__active{    
+    background: #000;
+    border-radius: 10%;
+}
+.switcher__active a:first-child{
+    color: #fff;
+}
+
+/* footer */
+q {
+    quotes: "«" "»";
+}
+.footer {
+    margin: 0 auto;
+    margin-top: -75px;
+    height: 75px;
+    max-width: 1101px;
+    text-align: center;
+    background-color: #27273e;
+}
+.footer div{
+    display: inline-block;
+    width: 366px;
+}
+.footer__author{
+    float: left;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 14px;
+    font-size: 14px;
+    font-family: "Gotham Pro";
+    color: #fff;
+}
+.footer__logo{
+    height: 75px;
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+}
+.footer__social{
+    float: right;
+    height: 75px;
+    text-align: right;
+    padding-right: 21px;
+}
+.footer__social p{
+    margin: 0;
+    padding-top: 17px;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Gotham Pro";
+    font-weight: bold;
+}
+.socials__icon{
+    padding-right: 31px; 
+    margin-top: 8px;
+}
+.socials__icon li{
+    display: inline-block;    
+    list-style-type: none;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    background-color: #d4d4d8;
+}
+.socials__icon a{
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+.vk__img{
+    padding-right: 5px;
+    padding-bottom: 2px;
+}
+.fb__img{
+    padding-right: 7px;
+    padding-top: 3px;
+}
+.google__img{
+    padding-right: 2px;
+    padding-bottom: 1px;
+}
+.twitter__img{
+    padding-right: 5px;
+}
+.mail__img{
+    padding-right: 4px;
+    padding-bottom: 1px;
+}
+.socials__icon .socials__icon-active{
+    background: #ec1e79;
+}
+
+
