@@ -158,7 +158,7 @@ input {
 .phone__schedule:hover + .schedule__dropdown {
   left: 40px;
 }
-.triangel{
+.schedule__triangle{
   border-top: 1px solid rgba(23, 59, 117, 0.25);
   border-left: 1px solid rgba(23, 59, 117, 0.25);
   border-radius: 5px;
@@ -245,17 +245,40 @@ input {
   text-decoration: none;
   color: #ec1e7b;
 }
-.menu_active {
-  color: #000;
-}
+
 .menu__title {
   font-family: "Gotham Pro";
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
   margin-left: 14px;
-  vertical-align: top;
 }
+
+/*.menu__icon.triangle{
+  background-image: url(./assets/img/main_icon.png);
+  background-repeat: no-repeat;
+  color: #000;
+}*//*
+.menu__icon.star{
+  background-image: url(./assets/img/feed_icon-black.png);
+  background-repeat: no-repeat;
+}*/
+.menu__icon.star + .menu__title{
+  color: #000;
+}
+
+
+/*
+.menu__link:hover ~ .wallet{
+  background-image: url(./assets/img/wallet_icon-black.png);
+  background-repeat: no-repeat;
+}*//*
+.menu__icon.star:first-child{
+  /*display: none;*/
+  /*visibility: visible;
+  opacity:0;
+}*/
+
 /**/
 .maincontent {
   display: flex;
