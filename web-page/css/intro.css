@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../assets/fonts/GothamPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.intro-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/img/intro/intro.jpg") center center / cover
+    no-repeat;
+}
+.intro-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  flex-flow: column nowrap;
+  animation: logo-scale 1s;
+  -webkit-animation: logo-scale 1s;
+}
+
+.container a {
+  text-decoration: none;
+  border: none;
+}
+.logo {
+  margin-bottom: 29px;
+}
+.btn {
+  width: 180px;
+  height: 40px;
+  font-family: "Gotham Pro";
+  font-size: 12px;
+  font-weight: bold;
+  color: #ec1e79;
+  border: 3px solid #ec1e79;
+  text-transform: uppercase;
+  background-color: transparent;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.btn:hover {
+  background: #ec1e79;
+  color: #fff;
+}
+
+@keyframes logo-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0.2) rotate(20deg);
+    -webkit-transform: scale(0.2) rotate(20deg);
+    -moz-transform: scale(0.2) rotate(20deg);
+    -ms-transform: scale(0.2) rotate(20deg);
+    -o-transform: scale(0.2) rotate(20deg);
+}
+  40% {
+    opacity: 1;
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+}
+  70% {
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+}
+  
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+}
